@@ -15,10 +15,10 @@ public class SoSanhTheoDiem implements ISoSanh<SinhVien> {
         if (o1.getDiemTB() > o2.getDiemTB()) {
             return 1;
         }
-        if (o1.getDiemTB() == o2.getDiemTB()) {
-            return 0;
-        }
-        return -1;
+       if (o1.getDiemTB() < o2.getDiemTB()) {
+            return -1;
+       }
+        return 0;
     }
     
 }
